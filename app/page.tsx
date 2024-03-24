@@ -1,12 +1,15 @@
-import NavigationBar from "@/app/components/ui/navbar";
-import Footer from "@/app/components/ui/footer";
+import NavigationBar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
 
 export default function Home() {
   return (
     <>
       <NavigationBar />
-      <main className="min-h-screen flex items-center justify-center">
-        <p className="text-[12vw] text-center"><span className="font-thin">SMALL</span> SUPPORT <span className="font-extrabold">BIG</span> IMPACT</p>
+      <main className="flex min-h-screen items-center justify-center">
+        <p className="text-center text-[12vw]">
+          <span className="font-thin">SMALL</span> SUPPORT{" "}
+          <span className="font-extrabold">BIG</span> IMPACT
+        </p>
       </main>
       <Footer />
     </>

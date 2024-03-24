@@ -9,7 +9,7 @@ export default function Footer() {
   const menuItems = ["Beranda", "Donasi", "Volunteer", "Tentang Kami"];
 
   return (
-    <footer className="bg-primary-100 flex flex-col lg:flex-row gap-8 lg:justify-evenly p-8">
+    <footer className="flex flex-col gap-8 bg-primary-100 p-8 lg:flex-row lg:justify-evenly">
       <div className="basis-1/4">
         <Image src="/logo.png" alt="Logo" width={120} height={120} />
         <p>
@@ -30,12 +30,14 @@ export default function Footer() {
         <p>Hubungi kami melalui:</p>
         <div className="flex items-center gap-2">
           <IconContext.Provider value={{ className: "w-8 h-8" }}>
-            <BiMailSend />commu.fund@commufund.com
+            <BiMailSend />
+            commu.fund@commufund.com
           </IconContext.Provider>
         </div>
         <div className="flex items-center gap-2">
-        <IconContext.Provider value={{ className: "w-8 h-8" }}>
-            <BiPhone />0812 1094 3940
+          <IconContext.Provider value={{ className: "w-8 h-8" }}>
+            <BiPhone />
+            0812 1094 3940
           </IconContext.Provider>
         </div>
       </div>
