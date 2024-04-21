@@ -38,10 +38,17 @@ export default function NavigationBar() {
               {menuItem}
             </a>
           ))}
-          {!isLogin && (
+          {isLogin ? (
+            <Link
+              href="/dashboard"
+              className="rounded-lg bg-gradient-to-r from-primary-400 to-primary-600 px-4 py-2 text-lg text-white hover:from-primary-600 hover:to-primary-600"
+            >
+              Profil
+            </Link>
+          ) : (
             <Link
               href="/login"
-              className="rounded-lg bg-gradient-to-r from-primary-400 to-primary-600 px-4 py-2 text-base text-white hover:from-primary-600 hover:to-primary-600"
+              className="rounded-lg bg-gradient-to-r from-primary-400 to-primary-600 px-4 py-2 text-lg text-white hover:from-primary-600 hover:to-primary-600"
             >
               Masuk
             </Link>
@@ -75,7 +82,14 @@ export default function NavigationBar() {
               </button>
             </a>
           ))}
-          {!isLogin && (
+          {isLogin ? (
+            <Link
+              href="/dashboard"
+              className="rounded-lg bg-gradient-to-r from-primary-400 to-primary-600 px-4 py-2 text-lg text-white hover:from-primary-600 hover:to-primary-600"
+            >
+              Profil
+            </Link>
+          ) : (
             <Link
               href="/login"
               className="rounded-lg bg-gradient-to-r from-primary-400 to-primary-600 px-4 py-2 text-lg text-white hover:from-primary-600 hover:to-primary-600"

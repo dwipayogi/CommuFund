@@ -9,7 +9,7 @@ export default function Footer() {
   const menuItems = ["Beranda", "Donasi", "Volunteer", "Tentang Kami"];
 
   return (
-    <footer className="flex flex-col gap-8 bg-primary-100 p-8 lg:flex-row lg:justify-evenly">
+    <footer className="flex flex-col gap-8 bg-primary-100 p-8 lg:flex-row lg:justify-evenly mt-12">
       <div className="basis-1/4">
         <Image src="/logo.png" alt="Logo" width={120} height={120} />
         <p>
