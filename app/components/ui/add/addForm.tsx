@@ -29,7 +29,7 @@ export default function AddForm() {
       timer: 2000,
       timerProgressBar: true,
     });
-    const response = await fetch("/api/add", {
+    const response = await fetch("https://commu-fundv2.vercel.app/postPass", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

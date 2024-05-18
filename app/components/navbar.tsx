@@ -20,10 +20,10 @@ export default function NavigationBar() {
     }
   });
 
-  const menuItems = ["Beranda", "Donasi", "Volunteer", "Tentang Kami"];
+  const menuItems = ["Beranda", "Donasi", "Volunteer", "Donasi & Volunteer"];
 
   return (
-    <nav className="fixed top-0 w-full bg-primary-300 bg-opacity-20 backdrop-blur-lg">
+    <nav className="fixed top-0 w-full bg-primary-300 bg-opacity-20 backdrop-blur-lg z-50">
       <div className="flex items-center justify-between px-8 py-4 md:px-12 lg:px-20">
         <div>
           <Image src={logo} alt="Logo" className="w-20 lg:w-24" />

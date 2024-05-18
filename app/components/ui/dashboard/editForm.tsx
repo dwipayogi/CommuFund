@@ -9,7 +9,7 @@ import { Input } from "@nextui-org/input";
 import { EyeFilledIcon } from "@/app/components/EyeFilledIcon";
 import { EyeSlashFilledIcon } from "@/app/components/EyeSlashFilledIcon";
 
-export default function RegisterForm() {
+export default function EditForm() {
   const [isVisible, setIsVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [name, setName] = useState("");

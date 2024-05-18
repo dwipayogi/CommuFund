@@ -9,7 +9,7 @@ async function addUser(
   password: any,
 ) {
   const random = 44;
-    await sql`INSERT INTO users (id, username, name, number, email, password) VALUES ('${random}', '${username}', '${name}', '${number}', '${email}', '${password})';`;
+    await sql`INSERT INTO users (id, username, name, number, email, password) VALUES ('${random}', '${username}', '${name}', '${number}', '${email}', '${password}');`;
 }
 
 export async function POST(req: Request) {
